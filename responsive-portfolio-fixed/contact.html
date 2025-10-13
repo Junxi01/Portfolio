@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Junxi Chen</title>
+  <meta name="description" content="Contact Junxi Chen — front-end & HCI student at UCI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container navbar" role="navigation" aria-label="Primary">
+      <div class="brand">
+        <span class="material-icons" aria-hidden="true">language</span>
+        <a href="index.html" class="site-title" style="text-decoration:none;color:inherit">Junxi Chen</a>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" aria-label="Toggle navigation">
+      <label class="nav-toggle-label" for="nav-toggle">
+        <span class="material-icons" aria-hidden="true">menu</span>
+      </label>
+
+      <nav id="nav-menu" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+<main id="main" class="container">
+
+  <section class="section">
+    <h1>Contact</h1>
+    <p>Send a message using the form. This example demonstrates accessible HTML forms with labels and helper text. Replace the <code>action</code> URL with your form handler.</p>
+  </section>
+
+  <section class="section section--alt" aria-labelledby="contact-form-heading">
+    <h2 id="contact-form-heading" class="sr-only">Contact form</h2>
+    <div class="card">
+      <form action="https://example.com/form" method="post">
+        <fieldset>
+          <legend>Message details</legend>
+
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required aria-required="true" autocomplete="name">
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required aria-required="true" autocomplete="email" placeholder="you@example.com">
+            <p class="helper" id="email-help">We'll only use your email to reply.</p>
+          </div>
+
+          <div>
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+              <option value="general">General</option>
+              <option value="project">Project inquiry</option>
+              <option value="speaking">Speaking</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required aria-required="true"></textarea>
+          </div>
+
+          <button class="button" type="submit">
+            <span class="material-icons inline-icon" aria-hidden="true">send</span> Send
+          </button>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Junxi Chen</strong><br>
+        <span class="muted">© <span id="year"></span> • All rights reserved</span>
+      </div>
+      <div>
+        <div><a href="mailto:chen161402@gmail.com">chen161402@gmail.com</a></div>
+        <div><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></div>
+        <div><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></div>
+      </div>
+      <div>
+        <div><a href="validations.html">Validation Instructions</a></div>
+        <div><a href="readme.txt">Assignment Readme</a></div>
+      </div>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+</body>
+</html>

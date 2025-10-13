@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Validation Instructions — Junxi Chen</title>
+  <meta name="description" content="How to capture W3C HTML/CSS and accessibility validation screenshots.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <div class="brand">
+        <span class="material-icons" aria-hidden="true">fact_check</span>
+        <strong>Validation Instructions</strong>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Back to site</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container section">
+    <h1>Validation & Accessibility</h1>
+    <ol>
+      <li>Open <a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C HTML Validator</a>, validate each page by URL or file upload, and save a <em>.jpg</em> screenshot per page as <code>validation/valid-html-*.jpg</code>.</li>
+      <li>Open <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener">W3C CSS Validator</a>, validate <code>styles.css</code>, and save a screenshot as <code>validation/valid-css-global.jpg</code>.</li>
+      <li>Run <a href="https://achecker.achecks.ca/checker/index.php" target="_blank" rel="noopener">AChecker</a> or <a href="https://wave.webaim.org/" target="_blank" rel="noopener">WAVE</a> on at least the home page. Save a screenshot as <code>validation/valid-accessibility-index.jpg</code>.</li>
+      <li>Commit the screenshots to the <code>validation/</code> folder before submission.</li>
+    </ol>
+    <p class="helper">Note: If you intentionally ignore certain warnings, document why in <code>readme.txt</code>.</p>
+  </main>
+
+  <footer class="container" style="padding:2rem 0;">
+    <a class="button" href="readme.txt">Open readme.txt</a>
+  </footer>
+</body>
+</html>

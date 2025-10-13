@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Junxi Chen</title>
+  <meta name="description" content="Selected projects by Junxi Chen — accessible, responsive front-end (HTML, CSS, JS/TS, React).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container navbar" role="navigation" aria-label="Primary">
+      <div class="brand">
+        <span class="material-icons" aria-hidden="true">language</span>
+        <a href="index.html" class="site-title" style="text-decoration:none;color:inherit">Junxi Chen</a>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" aria-label="Toggle navigation">
+      <label class="nav-toggle-label" for="nav-toggle">
+        <span class="material-icons" aria-hidden="true">menu</span>
+      </label>
+
+      <nav id="nav-menu" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+<main id="main" class="container">
+
+  <section class="section">
+    <h1>Projects</h1>
+    <p class="muted">A few highlights. Replace placeholders with your real work; it's okay to use Lorem Ipsum for text.</p>
+  </section>
+
+  <section class="section grid cols-2" aria-labelledby="projects-list-heading">
+    <h2 id="projects-list-heading" class="sr-only">Project list</h2>
+    <article id="supernova" class="card">
+      <img src="assets/images/supernova.jpg" alt="Mock of a medical DICOM-to-3D web prototype showing model controls, comparisons, and a QR code handoff to mobile AR">
+      <h2>SuperNova Academy — 2D→3D Medical Model Web Prototype (Figma)</h2>
+      <p>Web experience to upload DICOM and visualize interactive 3D models. Includes side-by-side / carousel comparison, first-run tutorial, explicit error states, and QR handoff to mobile AR.</p>
+      <ul class="muted">
+        <li><strong>Role:</strong> UI/UX design &amp; prototyping</li>
+        <li><strong>Team:</strong> SuperAnteaters</li>
+        <li><strong>Tools:</strong> Figma</li>
+      </ul>
+      <ul>
+        <li>Upload DICOM → convert to 3D (.obj/.sli); downloadable for reuse.</li>
+        <li>Desktop &amp; mobile viewer with rotate/zoom; compare in Side-by-Side or Carousel.</li>
+        <li>QR handoff to mobile AR; first-run tutorial; explicit error states.</li>
+      </ul>
+      <p class="actions">
+        <a class="button" href="https://www.figma.com/proto/1ZU5AWeX4EyM6BkWliEyl3/wireframes?node-id=92-26&starting-point-node-id=92%3A26&t=nqM5NwPex6kfGyho-1" target="_blank" rel="noopener">Prototype (Figma)</a>
+        <a class="button button--ghost" href="assets/docs/supernova-deliverable.pdf" target="_blank" rel="noopener">Design Doc (PDF)</a>
+      </p>
+    </article>
+
+    <article id="map" class="card">
+      <img src="assets/images/project2.jpg" alt="Zoomed-in campus map with building markers">
+      <h2>Campus Map</h2>
+      <p>SVG map with responsive panels. Respects <code>prefers-reduced-motion</code>.</p>
+      <ul class="muted">
+        <li>Role: Front-end</li>
+        <li>Tech: HTML, CSS, SVG</li>
+      </ul>
+      <p class="actions">
+        <a class="button" href="https://github.com/">Source</a>
+        <a class="button button--ghost" href="#">Live demo</a>
+      </p>
+    </article>
+
+    <article id="viz" class="card">
+      <img src="assets/images/project3.jpg" alt="Bar chart mock with axis labels">
+      <h2>Data Viz Starter</h2>
+      <p>Focus on accessible colors and aria-labels for charts.</p>
+      <ul class="muted">
+        <li>Role: Front-end</li>
+        <li>Tech: HTML, CSS, JS</li>
+      </ul>
+      <p class="actions">
+        <a class="button" href="https://github.com/">Source</a>
+        <a class="button button--ghost" href="#">Live demo</a>
+      </p>
+    </article>
+
+    <aside class="card" aria-label="Tips for reviewers">
+      <h2>Implementation notes</h2>
+      <ul>
+        <li>Responsive grid uses <code>minmax()</code> and media queries.</li>
+        <li>Navigation is CSS-only (checkbox) with proper labels.</li>
+        <li>Focus rings and skip-link improve keyboard navigation.</li>
+      </ul>
+    </aside>
+  </section>
+
+</main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Junxi Chen</strong><br>
+        <span class="muted">© <span id="year"></span> • All rights reserved</span>
+      </div>
+      <div>
+        <div><a href="mailto:chen161402@gmail.com">chen161402@gmail.com</a></div>
+        <div><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></div>
+        <div><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></div>
+      </div>
+      <div>
+        <div><a href="validations.html">Validation Instructions</a></div>
+        <div><a href="readme.txt">Assignment Readme</a></div>
+      </div>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+</body>
+</html>
